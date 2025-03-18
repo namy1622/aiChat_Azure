@@ -1,22 +1,3 @@
-﻿// // using Azure;
-// using Azure.Core;
-// using Azure.AI.OpenAI;
-// // using OpenAI.Chat;
-
-// var endpoint = new Uri("https://namgo-m8aoumr9-eastus2.cognitiveservices.azure.com/");
-// var credential = new Azure.AzureKeyCredential("539ByhIaNBPnGwYVW8Ax2JWzYmaTZcvA8QaFPIKEZ6CO8ZimTmejJQQJ99BCACHYHv6XJ3w3AAAAACOG8sgV");
-
-
-// var client = new OpenAIClient(endpoint, credential);
-// var deploymentName = "gpt-4o";
-// var response = client.GetChatCompletions(deploymentName, new ChatCompletionsOptions()
-// {
-//     Messages = { new ChatMessage(ChatRole.User, "What is the purpose of life?") },
-//     MaxTokens = 4096,
-//     Temperature = 1.0f,
-// });
-
-// Console.WriteLine(response.Value.Choices[0].Message.Content);
 
 using System;
 using Azure;
@@ -27,7 +8,7 @@ class Program
     static void Main()
     {
         var endpoint = new Uri("https://namgo-m8aoumr9-eastus2.cognitiveservices.azure.com/");
-        var credential = new AzureKeyCredential("539ByhIaNBPnGwYVW8Ax2JWzYmaTZcvA8QaFPIKEZ6CO8ZimTmejJQQJ99BCACHYHv6XJ3w3AAAAACOG8sgV");
+        var credential = new AzureKeyCredential("539Byh42dfg35s34IaNBPnGwYVW8Ax2JWzYmaTZcvA8QaFPIKEZ6CO8ZimTmejJQQJ99BCACHYHv6XJ3w3AAAAACOG8sgV");
 
         // Sử dụng OpenAIClient thay vì ChatCompletionsClient
         var client = new OpenAIClient(endpoint, credential);
